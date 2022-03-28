@@ -40,7 +40,7 @@ pipeline {
         steps {
             script {
                 kubernetesDeploy(
-                    configs: 'k8s-deployment.yaml',
+                    configs: 'Mediawiki-Final/Kubernetes',
                     kubeconfigId: 'K8S',
                     enableConfigSubstitution: true
                     )           

@@ -39,7 +39,7 @@ docker hub and aks cluster.
 1. AKS Cluster is setup and running. 
 2. Jenkins Master is up and running. 
 3. Setup Jenkins slave to run Docker builds.
-4. Docker, Docker pipeline and Kubernetes Deploy plug-ins are installed in Jenkins.
+4. Docker, Docker pipeline and kubernetes continuous deploy plug-ins are installed in Jenkins.
 
 # Jenkins Lab:
 1. Create Credentials for Docker Hub :-

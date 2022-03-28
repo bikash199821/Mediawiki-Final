@@ -1,7 +1,7 @@
 
 # Deploying Mediawiki app into Azure Kubernetes service cluster
 
-This Project Deploy Mediawiki Application to AKS Cluster using Jenkins CI/CD. This Project is divided into Four following parts -
+This Project Deploy Mediawiki Statefulset Application to AKS Cluster using Jenkins CI/CD. This Project is divided into Four following parts -
 
 # 1)Terraform
 It contains terraform(.tf) files which automate our infrastructure creation.
@@ -29,3 +29,24 @@ It Contains Manifest files,Which will be used to creating our object like Deploy
 2. terraform init
 3. terraform plan
 4. terraform apply -auto-approve
+
+
+# B. Steps for Deploy Mediawiki App into Kubernetes Cluster using Jenkins Pipeline | Containerize Mediawiki App and Deploy into AKS Cluster.
+
+we already create dockerfile for mediawiki source code which store in my github.We create a jenkins pipeline which pull the dockerfile from github and build it and upload to 
+docker hub and aks cluster.
+
+# Prerequisites
+1. AKS Cluster is setup and running. 
+2. Jenkins Master is up and running. 
+3. Setup Jenkins slave to run Docker builds.
+4. Docker, Docker pipeline and Kubernetes Deploy plug-ins are installed in Jenkins.
+
+# Jenkins Lab:
+1. Create Credentials for Docker Hub :-
+    Go to Jenkins UI, click on Credentials -->Click on Global credentials -->Click on Add Credentials
+
+2. Create Credentials for Kubernetes Cluster :- Click on Add Credentials, use Kubernetes configuration from drop down -->execute the below command to get kubeconfig info, copy the entire content of the file:
+sudo cat ~/.kube/config -->Enter ID as K8S and choose enter directly and paste the copied content and save.
+
+3. Create a pipeline in Jenkins :- Create a new pipeline job --> Copy the pipeline code from Jenkins folder -->  Build the pipeline.   

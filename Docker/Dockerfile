@@ -12,10 +12,10 @@ RUN wget  https://www-eu.apache.org/dist//httpd/httpd-2.4.53.tar.gz &&\
 
 #installing php7
 
-RUN wget https://www.php.net/distributions/php-7.3.7.tar.gz &&\
-    tar -xvzf php-7.3.7.tar.gz &&\
-    rm -rf php-7.3.7.tar.gz &&\
-    cd php-7.3.7 && ./configure --with-apxs2=/usr/local/apache2/bin/apxs --enable-mbstring --enable-mysqlnd --with-mysqli && make clean && make && make install 
+RUN wget https://www.php.net/distributions/php-7.4.28.tar.gz &&\
+    tar -xvzf php-7.4.28.tar.gz &&\
+    rm -rf php-7.4.28.tar.gz &&\
+    cd php-7.4.28 && ./configure --with-apxs2=/usr/local/apache2/bin/apxs --enable-mbstring --enable-mysqlnd --with-mysqli && make clean && make && make install 
 COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
 
 #installing WIKIMEDIA

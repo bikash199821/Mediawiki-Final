@@ -20,7 +20,6 @@ It Contains Manifest files,Which will be used to creating our object like Deploy
 2. Account setup in Azure.
 3. Kubectl is installed on your machine.
 4. Azure cli is installed.
-5. Install ruby and ruby json.
 
 
 # Steps
@@ -61,3 +60,6 @@ sudo cat ~/.kube/config -->Enter ID as K8S and choose enter directly and paste t
 ```bash
 3.  kubectl get services
 ```
+# Access Mediawiki Application from Internet.
+Once build is successful, go to browser and enter External-IP of LoadBalancer services.
+

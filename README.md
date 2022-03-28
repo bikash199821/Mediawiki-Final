@@ -44,7 +44,7 @@ docker hub and aks cluster.
 
 # Jenkins Lab:
 1. Create Credentials for Docker Hub :-
-    Go to Jenkins UI, click on Credentials -->Click on Global credentials -->Click on Add Credentials
+    Go to Jenkins UI, click on Credentials -->Click on Global credentials -->Click on Add Credentials --> Add Dockehub userid & password.
 
 2. Create Credentials for Kubernetes Cluster :- Click on Add Credentials, use Kubernetes configuration from drop down -->execute the below command to get kubeconfig info, copy the entire content of the file:
 sudo cat ~/.kube/config -->Enter ID as K8S and choose enter directly and paste the copied content and save.

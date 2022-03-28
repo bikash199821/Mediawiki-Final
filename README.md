@@ -1,7 +1,7 @@
 
 # Deploying Mediawiki app into Azure Kubernetes service cluster
 
-This Project Deploy Mediawiki Statefulset Application to AKS Cluster using Jenkins CI/CD. This Project is divided into Four following parts -
+This Project Deploy Mediawiki Application to AKS Cluster using Jenkins CI/CD. This Project is divided into Four following parts -
 
 # 1)Terraform
 It contains terraform(.tf) files which automate our infrastructure creation.

@@ -50,3 +50,14 @@ docker hub and aks cluster.
 sudo cat ~/.kube/config -->Enter ID as K8S and choose enter directly and paste the copied content and save.
 
 3. Create a pipeline in Jenkins :- Create a new pipeline job --> Copy the pipeline code from Jenkins folder -->  Build the pipeline.   
+
+# Verify deployments to AKS cluster
+```bash
+1.  kubectl get pods
+```
+```bash
+2.  kubectl get deployments
+```
+```bash
+3.  kubectl get services
+```
